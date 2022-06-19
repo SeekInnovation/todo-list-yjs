@@ -2,7 +2,7 @@ import React from "react";
 import {ActionType, INITIAL_STATE, reducer} from "./lib/reducer";
 import {TodoListType} from "./lib/model";
 
-const TodoContext = React.createContext<{ dispatch: React.Dispatch<ActionType>, state: TodoListType }>({
+export const TodoContext = React.createContext<{ dispatch: React.Dispatch<ActionType>, state: TodoListType }>({
     dispatch: () => {
     }, state: []
 });
